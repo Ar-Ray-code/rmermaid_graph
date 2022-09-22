@@ -35,7 +35,7 @@
 import re
 import copy
 
-from rqt_graph import rosgraph2_impl
+from rmermaid_graph import rosgraph2_impl
 import math
 
 import pydot
@@ -790,6 +790,10 @@ class RosGraphDotcodeGenerator:
             orientation,
             simplify)
 
+        # self.get_logger().info("nt_nodes: {}".format(node_list))
+        # self.get_logger().info("nt_edges: {}".format(edges))
+        # self.get_logger().info("nn_nodes: {}".format(nn_nodes))
+
         for n in nt_nodes or []:
             # cluster topics with same namespace
             if cluster_namespaces_level > 0 and \
@@ -886,6 +890,18 @@ class RosGraphDotcodeGenerator:
                     dotgraph,
                     _conv(in_edge.start),
                     _conv('n' + image_prefix + IMAGE_TOPICS_SUFFIX))
+
+
+        mermaid_str = "```mermaid\ngraph LR\n"
+        for e in edges:
+            mermaid_str += e.start + "--> |" + e.label + "| " + e.end + "\n"
+        mermaid_str += "```"
+
+        print("\n")
+        print("==== Export mermaid ====")
+        print(mermaid_str)
+        print("========================")
+        print("\n")
 
         return dotgraph
 

@@ -2,6 +2,6 @@
 
 import sys
 
-from rqt_graph.main import main
+from rmermaid_graph.main import main
 
 sys.exit(main())

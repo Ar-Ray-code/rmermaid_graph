@@ -1,5 +1,5 @@
 <package format="2">
-  <name>rqt_graph</name>
+  <name>rmermaid_graph</name>
   <version>1.2.1</version>
   <description>rqt_graph provides a GUI plugin for visualizing the ROS
       computation graph.<br />
@@ -16,6 +16,8 @@
   <url type="bugtracker">https://github.com/ros-visualization/rqt_graph/issues</url>
   <author email="dthomas@osrfoundation.org">Dirk Thomas</author>
   <author email="ablasdel@gmail.com">Aaron Blasdel</author>
+
+  <author email="ray255ar@gmail.com">Ar-Ray-code</author>
 
   <exec_depend>ament_index_python</exec_depend>
   <exec_depend>python_qt_binding</exec_depend>

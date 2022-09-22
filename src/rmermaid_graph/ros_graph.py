@@ -38,7 +38,7 @@ from python_qt_binding.QtGui import QIcon, QImage, QPainter
 from python_qt_binding.QtWidgets import QCompleter, QFileDialog, QGraphicsScene, QWidget
 from python_qt_binding.QtSvg import QSvgGenerator
 
-from rqt_graph.rosgraph2_impl import Graph
+from rmermaid_graph.rosgraph2_impl import Graph
 
 from qt_dotgraph.dot_to_qt import DotToQtGenerator
 # pydot requires some hacks

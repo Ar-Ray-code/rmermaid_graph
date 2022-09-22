@@ -6,7 +6,7 @@ from rqt_gui.main import Main
 
 
 def main():
-    sys.exit(Main().main(sys.argv, standalone='rqt_graph.ros_graph.RosGraph'))
+    sys.exit(Main().main(sys.argv, standalone='rmermaid_graph.ros_graph.RosGraph'))
 
 
 if __name__ == '__main__':

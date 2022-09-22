@@ -543,7 +543,7 @@ class Graph(object):
                 self.last_graph_refresh = time.time()
             # contact the nodes for stats
             else:
-                # initialize update_queue based on most current nodes list
+
                 if update_queue is None:
                     update_queue = list(self.nn_nodes)
                 # no nodes left to contact

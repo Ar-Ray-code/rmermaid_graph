@@ -1,6 +1,6 @@
 from setuptools import setup
 
-package_name = 'rqt_graph'
+package_name = 'rmermaid_graph'
 setup(
     name=package_name,
     version='1.2.1',
@@ -12,7 +12,7 @@ setup(
         ('share/' + package_name + '/resource', ['resource/RosGraph.ui']),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name, ['plugin.xml']),
-        ('lib/' + package_name, ['scripts/rqt_graph']),
+        ('lib/' + package_name, ['scripts/rmermaid_graph']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -27,13 +27,13 @@ setup(
         'Topic :: Software Development',
     ],
     description=(
-        'rqt_graph provides a GUI plugin for visualizing the ROS computation graph.'
+        'rmermaid_graph provides a GUI plugin for visualizing the ROS computation graph.'
     ),
     license='BSD',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'rqt_graph = rqt_graph.main:main',
+            'rmermaid_graph = rmermaid_graph.main:main',
         ],
     },
 )
