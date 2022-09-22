@@ -2,19 +2,29 @@
 
 My rqt_graph outputs **mermaid** and GUI.
 
+<br>
+
+**I want test cases for verification!** (more complicated, less dependency )
+
+<br>
+
+## Usage
+
+### Download & Build
 
 ```bash
-# Download
 mkdir -p ~/ws_galactic/src
 cd ~/ws_galactic/src
 git clone https://github.com/Ar-Ray-code/rmermaid_graph.git
 cd ../
-
 # build
 source /opt/ros/galactic/setup.bash
 colcon build --symlink-install
+```
 
-# run
+### Run
+
+```bash
 source ~/ws_galactic/install/setup.bash
 rmermaid_graph
 
@@ -28,6 +38,10 @@ rmermaid_graph
 # > ========================
 
 ```
+
+<br>
+
+### Generated mermaid
 
 ```mermaid
 graph LR
